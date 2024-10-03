@@ -1,0 +1,6 @@
+libfann-dev
+python3-dev
+python3-pip
+swig
+libfann-dev
+python3-fann2
