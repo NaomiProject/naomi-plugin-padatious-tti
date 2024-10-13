@@ -21,7 +21,6 @@ meta:
 
 To install a plugin in Naomi, you can follow the instructions below.
 
-```markdown
 # Padatious TTI Plugin for Naomi
 
 ## Overview
@@ -96,19 +95,10 @@ to actually install the plugin.
 
 ## Usage
 
-1. **Training Intents**: Define custom intents for specific commands. You can train the model by adding training data, which associates various phrases with corresponding actions.
-
-   Example of intent training data:
-   ```plaintext
-   [greeting]
-   hello
-   hi there
-   good morning
-   ```
-
-2. **Intent Classification**: After training, the plugin processes user input and matches it to the most likely intent. For example, a user can say “Hi,” and the plugin will classify this as a greeting intent.
-
-3. **Testing**: The plugin includes a `test_padatious_tti.py` file to ensure that intent recognition is working as expected. You can run this file to verify that your intents are being correctly classified.
+To use this plugin, either use `Naomi --repopulate` to run the wizard and select this Text to Intent engine, or edit the profile.yml file file directly:
+```
+tti_engine: Padatious TTI
+```
 
 ## Contributing
 
@@ -131,6 +121,5 @@ Once installed and configured, the Padatious TTI Plugin enables Naomi to recogni
 - **Naomi**: Recognizes the ‘turn on lights’ intent and sends a signal to the connected home automation system to turn on the lights.
 
 This plugin plays a crucial role in making Naomi’s interactions more natural and intuitive for users, whether it’s for smart home control, entertainment systems, or general voice-command tasks.
-```
 
 This detailed description includes the process of listing available plugins and installing the **Padatious TTI** plugin within Naomi.
