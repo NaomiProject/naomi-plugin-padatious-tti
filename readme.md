@@ -19,6 +19,8 @@ meta:
 
 
 
+To install a plugin in Naomi, you can follow the instructions below.
+
 ```markdown
 # Padatious TTI Plugin for Naomi
 
@@ -66,6 +68,32 @@ These dependencies ensure that the necessary libraries and tools for neural netw
 
 3. **Add to Naomi Configuration**: Once installed, configure the plugin within the Naomi framework by updating the plugin directory with the path to the padatious-tti plugin.
 
+### Plugin Installation in Naomi
+
+To install a plugin, what you would do is use a command like:
+
+```bash
+$ Naomi --list-available-plugins
+```
+
+This will give you a list of available plugins, for example:
+
+```plaintext
+Available Plugins:
+Announcements (notificationclient [1.0.0 installed]) - Naomi makes announcements at scheduled times.
+Archive Audiolog (stt_trainer [1.0.0]) - Allows the user to export their audiolog database and audio files into an archive file that can be merged into a different Naomi using the Import Audiolog plugin.
+...
+Padatious TTI (tti [1.0.0]) - Text-to-intent processing using Padatious.
+```
+
+Then use a command like:
+
+```bash
+$ Naomi --install "Padatious TTI"
+```
+
+to actually install the plugin.
+
 ## Usage
 
 1. **Training Intents**: Define custom intents for specific commands. You can train the model by adding training data, which associates various phrases with corresponding actions.
@@ -103,9 +131,6 @@ Once installed and configured, the Padatious TTI Plugin enables Naomi to recogni
 - **Naomi**: Recognizes the ‘turn on lights’ intent and sends a signal to the connected home automation system to turn on the lights.
 
 This plugin plays a crucial role in making Naomi’s interactions more natural and intuitive for users, whether it’s for smart home control, entertainment systems, or general voice-command tasks.
-
-This detailed description is meant to serve as a robust guide for using and contributing to the Padatious TTI Plugin.
 ```
 
-
-<EditPageLink/>
+This detailed description includes the process of listing available plugins and installing the **Padatious TTI** plugin within Naomi.
