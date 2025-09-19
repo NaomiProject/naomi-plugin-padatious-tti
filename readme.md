@@ -4,7 +4,6 @@ label: Padatious TTI
 title: Padatious TTI - Text to Intent
 type: ttis
 description: "Allows the Padatious Text to Intent module to be used with Naomi"
-logo: images/plugins/
 source: https://github.com/NaomiProject/naomi-plugin-padatious-tti.gitblob/master/readme.md
 meta:
   - property: og:title
