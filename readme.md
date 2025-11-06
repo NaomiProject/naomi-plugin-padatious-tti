@@ -14,8 +14,6 @@ meta:
 
 # Padatious TTI - Text to Intent
 
-<PluginLogo/>
-
 
 
 To install a plugin in Naomi, you can follow the instructions below.
